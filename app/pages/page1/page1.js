@@ -8,8 +8,8 @@ export class Page1 {
 	constructor() {
     
 	    this.items = [
-			{title: "Foo"},
-			{title: "Bar"}
+			{title: "Broodje 1", description: "beleg goes here"},
+			{title: "Bar", description: "beleg goes here"}
 		];
     
     
