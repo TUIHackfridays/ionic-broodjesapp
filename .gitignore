@@ -1,1 +1,9 @@
 node_modules
+.buildpath
+.htaccess
+.project
+.settings/
+composer.lock
+*.zip
+vendor/
+ionic.project
