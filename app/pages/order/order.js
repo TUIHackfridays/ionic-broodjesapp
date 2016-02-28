@@ -5,7 +5,7 @@ import {Page, ViewController, NavParams} from 'ionic-framework/ionic';
 })
 export class OrderModal {
   static get parameters() {
-    return [[NavParams, ViewController]];
+    return [[NavParams], [ViewController]];
   }
   constructor(params, viewCtrl) {
     this.item = params.get('sandwich');
