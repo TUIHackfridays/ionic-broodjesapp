@@ -1,4 +1,4 @@
-import {Page, NavParams, ViewController} from 'ionic-framework/ionic';
+import {Page, ViewController, NavParams} from 'ionic-framework/ionic';
 
 @Page({
   templateUrl: 'build/pages/order/order.html'
@@ -8,12 +8,11 @@ export class OrderModal {
     return [[NavParams], [ViewController]];
   }
   constructor(params, viewCtrl) {
+    this.item = params.get('sandwich');
     this.viewCtrl = viewCtrl;
-    this.title = params.get('title');
   }
   
   close() {
-    let data = {};
-    this.viewCtrl.dismiss(data);
+    this.viewCtrl.dismiss();
   }
 }
