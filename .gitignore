@@ -7,3 +7,14 @@ composer.lock
 *.zip
 vendor/
 ionic.project
+www
+.tmp
+.sass-cache
+<%= appPath %>/bower_components
+coverage
+platforms
+plugins
+*.swp
+*.swo
+*.log
+*.DS_Store
