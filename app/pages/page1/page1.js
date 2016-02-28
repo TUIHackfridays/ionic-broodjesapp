@@ -1,4 +1,4 @@
-import {Page, Modal, NavController, ViewController} from 'ionic-framework/ionic';
+import {Page, Modal, NavController} from 'ionic-framework/ionic';
 import {OrderModal} from '../order/order';
 
 @Page({
@@ -18,7 +18,7 @@ export class Page1 {
   }
   
   itemSelected(item) {
-    let orderModal = Modal.create(OrderModal, item);
+    let orderModal = Modal.create(OrderModal, {sandwich: item});
     this.nav.present(orderModal);
   }
 }

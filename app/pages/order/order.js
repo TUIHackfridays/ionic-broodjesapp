@@ -1,18 +1,18 @@
-import {Page, NavParams} from 'ionic-framework/ionic';
+import {Page, ViewController, NavParams} from 'ionic-framework/ionic';
 
 @Page({
   templateUrl: 'build/pages/order/order.html'
 })
 export class OrderModal {
   static get parameters() {
-    return [[NavParams]];
+    return [[NavParams, ViewController]];
   }
-  constructor(params) {
-    this.title = params.get('title');
+  constructor(params, viewCtrl) {
+    this.item = params.get('sandwich');
+    this.viewCtrl = viewCtrl;
   }
   
   close() {
-    let data = {};
-    this.viewCtrl.dismiss(data);
+    this.viewCtrl.dismiss();
   }
 }
