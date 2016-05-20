@@ -1,20 +1,28 @@
-node_modules
-.buildpath
-.htaccess
-.project
-.settings/
-composer.lock
-*.zip
-vendor/
-ionic.project
-www
-.tmp
-.sass-cache
-<%= appPath %>/bower_components
-coverage
-platforms
-plugins
-*.swp
-*.swo
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
 *.log
-*.DS_Store
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.buildpath
+.project
+.settings
+.idea/
+.sass-cache/
+.versions/
+coverage/
+dist/
+node_modules/
+tmp/
+temp/
+www/build/
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate

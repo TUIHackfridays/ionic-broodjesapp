@@ -1,6 +1,6 @@
 import {App, Platform} from 'ionic-framework/ionic';
-import {TabsPage} from './pages/tabs/tabs';
-
+import {Inject} from 'angular2/core';
+import {Login} from './pages/login/login';
 
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
@@ -12,7 +12,7 @@ export class MyApp {
   }
 
   constructor(platform) {
-    this.rootPage = TabsPage;
+    this.rootPage = Login;
 
     platform.ready().then(() => {
       // The platform is now ready. Note: if this callback fails to fire, follow
